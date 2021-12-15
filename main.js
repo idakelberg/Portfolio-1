@@ -1,9 +1,11 @@
-function showMenu() {
-  var navLinks = document.getElementById("navLinks");
-  navLinks.style.right = "0";
+/* Javascript taget fra Youtube https://www.youtube.com/watch?v=oYRda7UtuhA&t=1337s&ab_channel=EasyTutorials */
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right = "0";
 }
 
-function hideMenu() {
-  var navLinks = document.getElementById("navLinks");
-  navLinks.style.right = "-200px";
+function hideMenu(){
+    navLinks.style.right = "-200px";
 }
