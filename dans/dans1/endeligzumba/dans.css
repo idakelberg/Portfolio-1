@@ -1,0 +1,118 @@
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*Sætter alt standard border og padding til 0. Altså browserens css nulstilles*/
+body,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 50px;
+  text-align: center;
+  background-color: #100B00;
+  color: white;
+  font-size: 30px;
+}
+h1{
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+
+  background: no-repeat url("baggrund.jpg");
+  background-size: 115%;
+  margin-bottom: 20%;
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  height: 200px;
+  width: auto;
+}
+/* Box 1*/
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  color: #80A451;
+  background-color: #fff6eb;
+  margin: 40px;
+  border: 1cm;
+  border: 4px solid #80A451;
+  height: 22cm;
+  border-radius: 10%;
+}
+/*Box 1*/
+.hero-div{
+  text-align: center;
+  color: #100b00;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+
+}
+/*Box 2*/
+.hero-section2{
+  display: flex;
+  flex-direction: row;
+  color: #80A451;
+  background-color: #fff6eb;
+  margin: 40px;
+  border: 2cm;
+  border: 4px solid #80A451;
+  height: 22cm;
+  border-radius: 10%;
+}
+/*Box 2*/
+.hero-section2{
+  text-align: center;
+  color: #100b00;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
+.navbar {
+  background-color: #100B00;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap; /* Rykker teksten "ned", så der er plads til hele menuen på to "linjer" */
+
+}
+
+.navbar a {
+  font-family: 'Courier New', Courier, monospace;
+  color:#80A451 ;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.footer{
+display: flex;
+font-family: 'Courier New', Courier, monospace;
+color: #fff6eb;
+justify-content: space-evenly;
+align-content: center;
+background-color: #100b00;
+margin-bottom: 0px;
+height: 120px;
+
+}
+
+  
+  
+

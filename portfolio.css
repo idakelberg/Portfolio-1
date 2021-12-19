@@ -1,230 +1,440 @@
-* {
-    margin: 0;
-    padding: 0;
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+footer, header, nav, section 
+{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+html{
+  scroll-behavior: smooth;
+}
 
+nav{
+  display: none;
+}
+
+
+
+h1{ /* Indstilles til at alle h1'ere styles ens*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 4rem;
+    text-decoration: underline;
+    margin-top: 150px;
+    
+  
+  }
+  
+h2{ /* Indstilles til at alle h2'ere styles ens*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration: underline;
+  
+  }
+  
+h3{ /* Indstilles til at alle h3'ere styles ens*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  
+p{ /* Indstilles til at alle p'ere styles ens*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    text-align: center;
+    
   }
 
-h1{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 40px;
-  margin-top: 30%;
-  text-decoration: underline;
-  
 
-}
-
-h2{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 30px;
-  text-decoration: underline;
-
-}
-
-h3{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 30px;
-}
-
-p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 24px;
-  font-weight: lighter;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 30px;
-  text-align: center;
-  
-}
-
-  .telefon{
+/* Billede til mobil*/
+.billede_mobil_holder { 
     min-height: 100vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    display: block;
   }
 
 
+.billede_mobil_holder > img{
+    min-height: 100%;
+    width: 100%;
+  }
+
+/*Billede til web*/  
+.billede_web_holder {
+    height: 100vh;
+    width: 100%;
+    display: none;
+  }
+
+.pil-holder{
+background-color: #EFEDED;
+opacity: 0.6;
+position:fixed;
+bottom: 5%;
+right: 4%;
+width: 50px;
+height: 50px;
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.pil{
+  opacity: 1;
+  color: #000;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Billede af mig*/
 .mig{
-  margin-top: 90px;
-  margin-left: 25%;
-  margin-bottom: 70px;
-  height: 50%;
-  width: 50%;
-  border-radius: 200%;
+    margin-top: 4rem;
+    height: 180px;
+    width: auto;
+    border-radius: 200%;
+    
+  }
+
   
+
+.boks{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
+/*Billede til remrejsen*/
 .rumrejsen{
+    border-radius: 1rem;  /* Runde kanter */
+    margin-top: 10%;
+    width: auto;
+    height: 180px;
+  }
+
   
-  border-radius: 1rem;  /* Rounded border */
-  margin-left: 65px;
-  margin-top: 10%;
-  width: 70%;
-  height: 280px;
-}
-.knaprejse {
+/*Zumba billedet*/
+.zumba{ 
+    width: auto;
+    height: 180px;
+  }
   
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  margin-left: 25%;
-  border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-bottom: 20%;
-}
-
-.zumba{
-  margin-left: 65px;
-  margin-top: 10%;
-  width: 70%;
-  height: 280px;
-}
-
-.knapzumba{
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  margin-left: 25%;
-  border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-bottom: 20%;
-}
-
-
+/*Handy billedet*/  
 .handy{
-  margin-left: 65px;
-  margin-top: 10%;
-  width: 70%;
-  height: 280px;
-}
-
-.knaphandy{
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  margin-left: 25%;
-  border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-bottom: 20%;
-}
-
+    width: auto;
+    height: 220px;
+  }
+  
+  
+/*Jacobs logo*/
 .jacob{
-  margin-left: 65px;
-  margin-top: 10%;
-  width: 70%;
-  height: 280px;
+    
+    width: auto;
+    height: 180px;
+  }
+  
+  .løsning{
+    justify-content: flex-end;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .løsning a{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .send{
+    background-color: #EFEFED;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    width: 23%;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+  }
+
+
+/*Styling af knap sektionen*/
+section a{
+    background-color: #EFEFED;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    width: 60%;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
 }
 
-.knapjacob{
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  margin-left: 25%;
-  border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-bottom: 20%;
+/*hover effekt på knappen*/
+section a:hover{
+    cursor: pointer;
+    background-color: #959595;
+    transition: 300ms ease-in;
+}
+section input{
+    width: 97%;
+    height: 2rem;
+    font-size: 1rem;
+    
+}
+#cv a{
+  width: 20%;
 }
 
-.cv{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
+textarea{
+    resize: none;
+    width: 60%;
+    height: 2cm;
+
+  
+}
+form label{
+    width: fit-content;
+    min-width: 45%;
+    text-align: left;
+    margin-bottom: 0.4rem;
 }
 
-.cvknap{
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  margin-left: 25%;
-  border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-bottom: 20%;
-}
-
-input{ /* Størrelse på de to øverste bokse*/
-  width: 50%;
-  height: 1cm;
-  margin-left: 25%;
-}
-
-label{ /* tekst ved kontaktboks*/
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-textarea{ /* besked boks*/
-  width: 60%;
-  height: 2cm;
-  margin-left: 20%;
-  margin-right: 20%;
+form p{
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 form {
-  font-size: 1.5rem;
-  margin-top: 4rem;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    align-items: center;
   
-
-}
-
-.send {
-  
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  padding: 0.5rem;
-  margin-left: 25%;
-  border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-bottom: 20%;
-}
-
-
+  }
 
 footer {
-  background-color: #EFEDED;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* padding-right: 2rem;
-  padding-left: 2rem; */
-  align-self: center;
+    background-color: #EFEDED;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    align-items: center;
+    margin-top: 2rem;
+    
+  }
   
+
+  
+
+/*Styling af links i footer*/
+footer a{
+    text-decoration: none;
+    color: #000;
 }
 
 @media (min-width: 1000px) {
-  header {
-    background-image: url("Billede.jpg");
-    height: 700px;
+  
+h1{
+  margin-bottom: 3rem;
+}
+
+h2{
+  font-size: 20px;
+
+}
+
+p{
+  margin-top: 0%;
+}
+
+.løsning{
+  justify-content: flex-end;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.løsning a{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.billedeholder{
+min-height: 150px;
+display: flex;
+align-items:center;
+
+}
+.billede_mobil_holder {
+    display: none;
+  }
+  
+.billede_mobil_holder > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+.billede_web_holder {
+  display: block;
+    width: 100%;
+  }
+  
+.billede_web_holder > img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
   }
 
+nav{
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #EFEDED;
+  height: 4rem;
+  display: block;
   
+
+}
+
+.nav-links{
+  flex-direction: row;
+  display: flex;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+
+
+
+}
+ul a{
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: #000;
+  text-decoration: none;
+  
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  padding-left: 0%;
+  height: 100%;
+
+}
+.mig{
+  margin-bottom: 4%;
+  margin-top: 0%;
+}
+
+.rumrejsen{
+  width: auto;
+  height: 100px;
+}
+
+.zumba{
+  width: auto;
+  height: 120px;
+  margin-top: 5%;
+}
+
+.handy{
+  width: auto;
+  height: 160px;
+  
+}
+
+.jacob{
+  width: auto;
+  height: 120px;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+.rækker{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.boks {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(25% - 1rem);
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0,0, 3);
+  margin: 4px;
+}
+
+
+.kontakt2{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  margin-bottom: 1rem;
+  text-align: left;
+
+}
+
+.størrelse{
+  width: 100%;
+}
+
+textarea{
+width: 45%;
+}
+
+
+
+
+
+
+
+}
+
+

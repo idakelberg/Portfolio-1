@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Standard bodystile på nav-bar nulstilles*/ 
+
+body {
+  width: 100%;
+  height: 100%;
+  background: no-repeat url("baggrund.jpg");
+  background-size: 115% 150%;
+}
+*{
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/* Herunder er alle overskrifter (headings) samt anchor-links sat til samme font-family */
+h1, h2, h3, h4, h5, h6, a { 
+    font-family: Bebas Neue, sans-serif;
+}
+a{ /* Ændrer farven på e-mail adressen*/
+  color: white;
+}
+
+/* Herunder er header farvet og stylet */
+.header-background { 
+    width: 100%;
+    height: 50px; /* Px er fast størrelse, % justerer efter skærm */
+  }
+
+  /* Herunder er topnav farvet og stylet */
+  .topnav {
+    display: flex; /* Gør at topnav-boksen bliver en flexbox --> giver muligheder for at rykke komponenter i pgl. box */
+    align-items: center; /*Gør at topnav aligner efter midten af headerbackground */
+    width: 100%; 
+    height: 100%;
+    justify-content: left; /*Rykker tekst til højre side */
+  }
+
+  .topnav ul { /* Dette gør at den KUN styler liste i topnav */
+    display: flex; /* Flexbox gør ALTID at den styler vandret */
+    list-style-type: none; /*Fjerner prikker på liste */
+  }
+
+  .topnav ul li {
+    padding: 30px; /* Ændrer hvor meget topnav skal fylde*/
+  }
+
+  .header-background a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;/* tekst størrelsen*/
+  }
+
+
+    
+
+
+h1 {
+/* Overskiften - booking */ 
+    color: white;
+    font-size:60px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1cm;
+}       
+  
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Dette gør at formularen er 80% bred*/
+    padding: 12px; /* Den indre afstand */  
+    border-radius: 5px; /* Rundinger på  */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+  }
+  
+
+  /* Style af booking knappen */
+  input[type=submit] {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 18px;
+    background-color: #f1cd2f00;
+    color: white;
+    padding: 12px 20px; /* Størrelsen på knappen*/
+    border: none; /* Ramme rundt om knappen*/
+    float: right ;
+  }
+  #kommentar{
+    height:100px; /* Størrelsen på kommentar feltet*/
+  }
+  footer>p{
+    font-family: Bebas Neue, sans-serif;
+  }
+
+
+  /* Farve ændring når man tager musen ind over knappen */
+  input[type=submit]:hover {
+    background-color: #E5E557;
+  }
+  
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center; /* Bestemmer placeringen*/
+    padding: 10px;
+    background-color: rgba(88, 40, 177, 0.596);
+    color: white;
+    width: 100%;
+  }
+  .booking{
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+  
+  
+
+
+
+ 
+
+
+
+
+
+
+
